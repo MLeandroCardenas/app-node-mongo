@@ -1,0 +1,28 @@
+{
+  "name": "cars-app",
+  "version": "1.0.0",
+  "description": "aplicacion con express y logica de carros",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js",
+    "dev": "nodemon ./index.js",
+    "test": "jest --verbose"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Michael Cardenas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mocha": "^10.3.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  }
+}

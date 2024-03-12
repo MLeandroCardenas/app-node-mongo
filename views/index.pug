@@ -1,0 +1,17 @@
+extends masterPage 
+
+block contenido
+    panel.crear-proyecto 
+        a(href="/carros") Ir a carros
+    form.agregar-proyecto(action='/api/v1/nuevo-carro' method="POST")
+                .campo
+                    label(for="matricula") Matricula: 
+                    input(type="text" id="matricula" name="matricula" placeholder="Digite su matricula")  
+                .campo
+                    label(for="modelo") Modelo: 
+                    input(type="text" id="modelo" name="modelo" placeholder="Digite su modelo")  
+                .campo
+                    label(for="marca") Marca: 
+                    input(type="text" id="marca" name="marca" placeholder="Digite su marca")  
+                .campo.enviar
+                    input(type="submit" value="Guardar" class="boton")
